@@ -23,7 +23,7 @@
 	<!-- Header -->
 	<div id="header">
 		<div class="inner_container" style="width:1210px;">
-			<a id="logo" href="http://projectmgame.com"><img src="code/images/logo.png" alt="Project M logo" /><span>v 3.6</span></a>
+			<a id="logo" href="http://projectmirror.no-ip.org/"><img src="code/images/logo.png" alt="Project M logo" /><span>v 3.6</span></a>
 		</div>
 	</div>
 	<!-- End Header -->
@@ -42,7 +42,7 @@
                 <h2>Custom Stagelist</h2>
                 <p>Directions: Click and drag stages to move them around. Click on a stage to change or remove it.</p>
                 <form method="post" enctype="multipart/form-data">
-                      <label for="gct_upload">Choose gct to upload</label>
+                      <label for="gct_upload">Choose a gct to upload</label>
                       <input type="file" id="gct_upload" name="gct_upload" accept=".gct" ></form><br>
 
 				<!-- End Module: Panels -->
@@ -68,7 +68,7 @@
                 </div>
                 <form action="">
                 <!-- <label style="color:#ddffff;"><input id="coloredStagelists" name="" type="checkbox" value=""> Use colored stagelist textures</label><br /> -->
-                </form>
+                </form><br><br>
                 <a href="#" style="width:135px; margin-bottom:30px;" class="btn" id="saveGct">Save GCT</a>
                 <a id="generate_codes" style="width:135px; margin-bottom:30px;" class="btn" href="textures.php">Generate Codes</a>
                 <div id="demCodes" style="font-family:'Courier New', Courier, monospace;"></div>
@@ -87,9 +87,10 @@
 	<!-- Footer -->
 		<div id="footer">
 	<ul class="clearfix">
-		<li class="float_left"><a href="http://projectmgame.com" target="_blank">Download Project M</a> | <a href="https://github.com/libertyernie/brawltools/releases/download/v0.76b_h2/BrawlBox.v0.76b.Hotfix.2.exe" target="_blank">Download Brawl Box v0.76b</a></li>
-		<li class="float_right">App developed by <a href="https://twitter.com/SOJ_SSB" target="_blank">SOJ</a></li>
-	</ul>
+		<li class="float_left" style="float:left; width:400px; display:inline-block;"><a href="http://projectmirror.no-ip.org/" target="_blank">Download Project M</a> | <a href="https://github.com/libertyernie/brawltools/releases/download/v0.76b_h2/BrawlBox.v0.76b.Hotfix.2.exe" target="_blank">Download Brawl Box v0.76b</a></li>
+		<li class="float_right" style="float:right; width:200px; display:inline-block;">App developed by <a href="https://twitter.com/SOJ_SSB" target="_blank">SOJ</a></li>
+        <br />
+    </ul>
 </div>
     <!-- End Footer -->
     <div id="html_templates">
@@ -153,6 +154,33 @@
                     </select>
             </p>
     
+            <ul class="module-btn_container clearfix">
+                <li class="float_left">
+                    <a class="btn close" href="#" style="display: inline-block; color:#000; background-color:#d4ddff">Save</a> <a id="btn-delete_stage" style="display: inline-block" class="btn warning close trigger" href="#">Remove</a>
+                </li>
+                <li class="float_right">
+                    <a class="btn close" href="#">Cancel</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="html_templates">
+        <!-- Modal Windows -->
+        <!-- Base Structure -->
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-close">
+                    <a class="btn mini" href="#">close</a>
+                </div>
+            </div>
+        </div>
+    <div id="modal-load-gct">
+            <h2 class="module-header">[Stage Name]</h2>
+            <p><label>Choose a Stage: 
+                
+            </p>
+
             <ul class="module-btn_container clearfix">
                 <li class="float_left">
                     <a class="btn close" href="#" style="display: inline-block; color:#000; background-color:#d4ddff">Save</a> <a id="btn-delete_stage" style="display: inline-block" class="btn warning close trigger" href="#">Remove</a>
