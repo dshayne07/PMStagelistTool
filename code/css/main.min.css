@@ -3,7 +3,8 @@ body {
     color: #fff;
     font-size: 13px;
     font-family: Helvetica, Arial, sans-serif;
-    background: #04020f url('../images/bg.png') center top
+    background: #04020f url('../images/bg.png') center top;
+    background-attachment: fixed;
 }
 h1,
 h2,
@@ -18,8 +19,8 @@ h1 {
     margin: 0 0 20px
 }
 h2 {
-    font-size: 18px;
-    margin: 0 0 15px
+    font-size: 32px;
+    margin: 24px 0;
 }
 h2>a {
     font-weight: normal;
@@ -130,7 +131,7 @@ button[disabled="disabled"] {
     display: block
 }
 .inner_container {
-    width: 1210px;
+    /* width: 1210px; */
     margin: 0 auto;
     position: relative
 }
@@ -225,9 +226,9 @@ button[disabled="disabled"] {
     margin: 0;
     display: block
 }
-#content {
-    width: 820px;
-    padding: 20px;
+.content {
+    max-width: 960px;
+    padding: 1em;
     border: 1px solid #fff;
     margin-left:auto;
     margin-right:auto;
@@ -235,14 +236,14 @@ button[disabled="disabled"] {
     background: rgba(0, 0, 0, .5);
     position: relative
 }
-#content .btn{
+.content .btn{
     width:100px;
-    display:inline-block;
+    display:inline-block!important;
 }
-#content .btn, .page-btns{
+.content .btn, .page-btns{
     text-align: center;
 }
-#content.full {
+.content.full {
     width: 100%;
     float: none
 }
@@ -804,4 +805,14 @@ button[disabled="disabled"] {
   }
   .item-content {
     position: relative;
-    wi
+  }
+  .pageTitle span{
+    color:#dadada;
+    font-size:16px;
+    font-weight:400;
+    margin-left:8px;
+  }
+  .pageTitle{
+    display: flex;
+    align-items: center;
+  }
