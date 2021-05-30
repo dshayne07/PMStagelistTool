@@ -816,3 +816,22 @@ button[disabled="disabled"] {
     display: flex;
     align-items: center;
   }
+  .muuri-item:hover:after{
+      opacity:0.5!important;
+      visibility: visible!important;
+  }
+  .muuri-item:after{
+      display:block;
+      content:'';
+      width:65px;
+      height:56px;
+      position: absolute;
+      background: rgb(49,182,166);
+background: linear-gradient(90deg, rgba(49,182,166,0.3701855742296919) 0%, rgba(97,255,236,0.3533788515406162) 29%, rgba(170,255,245,0.6026785714285714) 67%, rgba(49,182,166,0.23853291316526615) 100%);
+    top:4px;
+      left:4px;
+      pointer-events: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+    }
