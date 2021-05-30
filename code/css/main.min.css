@@ -820,6 +820,7 @@ button[disabled="disabled"] {
       opacity:0.5!important;
       visibility: visible!important;
   }
+  .modal:hover{ cursor: cell!important; }
   .muuri-item:after{
       display:block;
       content:'';
